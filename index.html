@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h3>Week 3 Assignment - Forms</h3>
+    <br /><br />
+    <form>
+      <label for="input_name">Name:</label><br />
+      <input type="text" id="name" /><br />
+
+      <label for="input_email">Email:</label><br />
+      <input type="email" id="email" required /><br />
+
+      <label for="date">Date:</label><br />
+      <input type="date" id="date" /><br />
+      <br />
+
+      <form>
+        <h3>Write something!</h3>
+        <textarea id="large_body" name="large_body" rows="4" cols="50" required>Input Text</textarea>
+        <br> <label for="input_body">Large Body:</label><br />
+      <!-- <input type="text" id="large_body" rows="4" cols="50" required /><br /> -->
+
+      <!-- Select Box -->
+      <br /><br />
+      <label for="color">Choose a color:</label>
+      <select name="color" id="color">
+        <option value="volvo">Red</option>
+        <option value="saab">White</option>
+        <option value="opel">Green</option>
+        <option value="audi">Pink</option>
+      </select>
+      <br /><br />
+
+      <!-- Checkbox -->
+      <form required>
+        <h3>How do you feel about forms?</h3>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I love forms</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I can't stand forms</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> What's forms?</label>
+      </form>
+      <br /><br />
+      <!-- Radio Buttons -->
+      <form>
+        <h3>What color is the sky?</h3>
+          <input type="radio" id="html" name="fav_language" value="HTML" />  
+        <label for="html">Blue</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />  
+        <label for="css">Green</label><br />
+         
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+          <label for="javascript">Black</label>
+      </form>
+      <br /><br />
+
+      
+
+
+      <!-- Submit Button -->
+      <input type="submit" />
+    </form>
+    <br />
+  </body>
+</html>
